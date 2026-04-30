@@ -1,0 +1,13 @@
+config-file = ?auto/theme.ghostty
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = tabs
+font-family = "Fira Code Nerd Font"
+font-ligatures = true
+font-size = 16
+font-thicken = true
+split-divider-color = #3E4451
+copy-on-select = true
+shell-integration-features = ssh-terminfo,ssh-env
+macos-option-as-alt = true
+window-padding-x = 10
+window-padding-y = 10

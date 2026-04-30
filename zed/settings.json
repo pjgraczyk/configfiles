@@ -1,0 +1,111 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "proxy": "",
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "buffer_line_height": "standard",
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+  },
+  "use_system_path_prompts": false,
+  "use_system_prompts": false,
+  "project_panel": {
+    "bold_folder_labels": true,
+  },
+  "ui_font_weight": 500.0,
+  "buffer_font_weight": 500.0,
+  "icon_theme": "Min Icons",
+  "languages": {
+    "C": {
+      "prettier": {
+        "allowed": true,
+      },
+      "inlay_hints": {
+        "enabled": true,
+      },
+    },
+  },
+  "gutter": {
+    "runnables": true,
+  },
+  "relative_line_numbers": "enabled",
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "which_key": {
+    "enabled": true,
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": true,
+    },
+    "default_width": 640.0,
+    "copy_on_select": true,
+    "option_as_meta": true,
+    "blinking": "on",
+    "cursor_shape": "bar",
+    "font_family": "FiraCode Nerd Font",
+    "font_weight": 400.0,
+    "font_features": {
+      "calt": true,
+      "liga": true,
+    },
+    "show_count_badge": true,
+    "flexible": true,
+  },
+  "ssh_connections": [
+    {
+      "host": "hetzner-tailscale",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/pjgraczyk"],
+        },
+        {
+          "paths": ["/home/pjgraczyk/projects/c_intro"],
+        },
+      ],
+      "nickname": "hetzner",
+    },
+  ],
+  "helix_mode": true,
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+    "mistral-vibe": {
+      "favorite_config_option_values": {
+        "mode": ["auto-approve"],
+        "thinking": ["max"],
+      },
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+    "gemini": {
+      "type": "registry",
+    },
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": "Min Dark (Solid)",
+}
