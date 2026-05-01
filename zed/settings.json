@@ -1,26 +1,59 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "language_models": {
+    "lmstudio": {
+      "api_url": "http://192.168.0.77:1234/api/v1"
+    },
+    "ollama": {
+      "api_url": "http://localhost:11434"
+    }
+  },
+  "restore_on_startup": "launchpad",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "ui_font_family": ".SystemUIFont",
+  "outline_panel": {
+    "indent_size": 10.0
+  },
+  "agent": {
+    "default_profile": "minimal",
+    "flexible": false,
+    "max_content_width": 360.0,
+    "default_width": 360.0,
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-6",
+      "enable_thinking": false
+    },
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "gpt-5-nano",
+      "enable_thinking": false
+    },
+    "favorite_models": [
+      {
+        "provider": "zed.dev",
+        "model": "gpt-5-nano",
+        "enable_thinking": false
+      }
+    ],
+    "model_parameters": []
+  },
   "use_system_window_tabs": true,
   "tab_bar": {
-    "show_pinned_tabs_in_separate_row": true
+    "show_pinned_tabs_in_separate_row": true,
   },
   "tabs": {
     "git_status": true,
-    "file_icons": true
+    "file_icons": true,
   },
   "title_bar": {
     "show_menus": true,
-    "show_branch_status_icon": true
+    "show_branch_status_icon": true,
   },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "proxy": "",
   "buffer_font_family": "FiraCode Nerd Font Mono",
@@ -32,10 +65,11 @@
   "use_system_path_prompts": false,
   "use_system_prompts": false,
   "project_panel": {
+    "indent_size": 10.0,
     "bold_folder_labels": true,
   },
-  "ui_font_weight": 500.0,
-  "buffer_font_weight": 500.0,
+  "ui_font_weight": 400.0,
+  "buffer_font_weight": 400.0,
   "icon_theme": "Min Icons",
   "languages": {
     "C": {
@@ -45,6 +79,9 @@
       "inlay_hints": {
         "enabled": true,
       },
+    },
+    "Python": {
+      "language_servers": ["!basedpyright", "ty", "ruff"],
     },
   },
   "gutter": {
@@ -100,6 +137,9 @@
   ],
   "helix_mode": true,
   "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    },
     "claude-acp": {
       "type": "registry",
     },
@@ -117,7 +157,7 @@
       "type": "registry",
     },
   },
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "ui_font_size": 13.0,
+  "buffer_font_size": 13.0,
   "theme": "Min Dark (Solid)",
 }

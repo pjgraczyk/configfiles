@@ -1,0 +1,7 @@
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = tabs
+font-size = 16
+font-thicken = true
+copy-on-select = true
+macos-option-as-alt = true
+shell-integration-features = ssh-terminfo,ssh-env
